@@ -40,7 +40,7 @@ jobs:
       - name: Construir imagen Docker
         uses: docker/build-push-action@v6
         with:
-          context: ./dser-http/backend
-          file: ./dser-http/backend/Dockerfile
+          context: .
+          file: ./Dockerfile
           push: false
           tags: miusuario/mi-app:${{ github.sha }}
